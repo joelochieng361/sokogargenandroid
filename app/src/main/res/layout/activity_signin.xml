@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signin"
+    android:background="#28BF92"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="❇️ Signin ❇️"
+        android:fontFamily="cursive"
+        android:textStyle="italic|bold"
+        android:textAlignment="center"
+        android:background="@drawable/shape"
+        android:padding="20dp"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="10dp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#f8fdff"
+            >
+
+<!--            Below is the email editext-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="📧 Enter email address"
+                android:textSize="20sp"
+                android:fontFamily="times new roman"
+                android:textColorHint="#2196F3"
+                android:id="@+id/email"
+                android:textColor="@color/black"
+                android:textColorHighlight="#DC044F"
+                android:background="#EFEBEB"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"
+                />
+
+            <!--            Below is the password editext-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="🔑 Enter your password"
+                android:textSize="20sp"
+                android:fontFamily="times new roman"
+                android:textColorHint="#2196F3"
+                android:id="@+id/password"
+                android:textColor="@color/black"
+                android:textColorHighlight="#DC044F"
+                android:background="#EFEBEB"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="20dp"
+                />
+<!--            Below is a button to sign in-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "👮signin"
+                android:padding="10sp"
+                android:fontFamily="times new roman"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textColor="#112002"
+                android:backgroundTint="#78a851"
+                android:id="@+id/signinBtn"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_text"
+                android:fontFamily="times new roman"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textColor="#4e529c"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/signuptxt"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>
